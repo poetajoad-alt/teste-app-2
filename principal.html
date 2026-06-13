@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Página inicial da Isabele Mariana Nails para acessar perfil, agendamentos e serviços">
+  <meta name="theme-color" content="#591c31">
+  <title>Principal | Isabele Mariana Nails</title>
+<link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="principal.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body data-page="home">
+
+  <div class="app-container">
+
+    <header class="app-header">
+
+      <div class="profile-section">
+
+        <div class="welcome-text">
+          <p class="welcome-label">Seja Bem-Vinda</p>
+          <h1 class="welcome-name">Nome da Cliente</h1>
+        </div>
+
+        <img src="assets/images/profile-placeholder.jpg" alt="Foto de perfil da cliente" class="profile-img">
+
+      </div>
+
+    </header>
+
+    <main class="app-content">
+
+      <section class="quick-access" aria-label="Acesso rápido">
+
+        <!-- Navegação: Meu Perfil -> mapeado para arquivo existente `meu-perfil.html` -->
+        <a href="meu-perfil.html" class="quick-card">
+          <div>
+            <h2>Meu Perfil</h2>
+            <p>Visualize e edite seus dados</p>
+          </div>
+          <span aria-hidden="true">›</span>
+        </a>
+
+        <!-- Navegação: Meus Agendamentos -> usa `meu-perfil.html` (seção de agendamentos) -->
+        <a href="meu-perfil.html" class="quick-card">
+          <div>
+            <h2>Meus Agendamentos</h2>
+            <p>Consulte seus horários</p>
+          </div>
+          <span aria-hidden="true">›</span>
+        </a>
+
+      </section>
+
+      <section class="services-section" aria-labelledby="services-title">
+
+        <h2 id="services-title">Categorias</h2>
+
+        <!-- Navegação: Nail Designer -> mapeado para `unhas-em-gel.html` -->
+        <a href="unhas-em-gel.html" class="service-card">
+          <span>Nail Designer</span>
+          <span aria-hidden="true">›</span>
+        </a>
+
+        <!-- Navegação: Manicure e Pedicure -> mapeado para `manicure.html` -->
+        <a href="manicure.html" class="service-card">
+          <span>Manicure e Pedicure</span>
+          <span aria-hidden="true">›</span>
+        </a>
+
+        <!-- Navegação: Spa dos Pés -> mapeado para `pedicure.html` -->
+        <a href="pedicure.html" class="service-card">
+          <span>Spa dos Pés</span>
+          <span aria-hidden="true">›</span>
+        </a>
+
+        <!-- Navegação: Cursos -> mapeado para `manicure.html` (fallback para serviços) -->
+        <a href="manicure.html" class="service-card">
+          <span>Cursos</span>
+          <span aria-hidden="true">›</span>
+        </a>
+
+      </section>
+
+      <section class="gallery-section" aria-labelledby="gallery-title">
+
+        <div class="section-header">
+          <h2 id="gallery-title">Vitrine</h2>
+          <!-- Navegação: Vitrine -> mapeado para `galeria.html` -->
+          <a href="galeria.html">Ver Tudo</a>
+        </div>
+
+        <div class="gallery-scroll">
+          <img src="assets/images/vitrine-01.jpg" alt="Trabalho de unhas 1">
+          <img src="assets/images/vitrine-02.jpg" alt="Trabalho de unhas 2">
+          <img src="assets/images/vitrine-03.jpg" alt="Trabalho de unhas 3">
+          <img src="assets/images/vitrine-04.jpg" alt="Trabalho de unhas 4">
+        </div>
+      </section>
+
+    </main>
+
+  </div>
+  <script src="js/app.js" defer></script>
+</body>
+
+</html>
+
+
+
+

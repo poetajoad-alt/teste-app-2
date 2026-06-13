@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Isabele Mariana Nails - Login">
+    <title>Login - Isabele Mariana Nails</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <main class="login-main">
+            <!-- Header with Back + Home -->
+            <header class="login-header">
+                <nav class="login-nav">
+                    <!-- Voltar: history-aware fallback para index.html -->
+                    <a href="index.html" data-back="history" class="login-nav-link" aria-label="Voltar">‹</a>
+                    <h1 class="login-title">Login</h1>
+                    <!-- Home: leva ao principal -->
+                    <a href="principal.html" class="login-nav-link" aria-label="Home">⌂</a>
+                </nav>
+            </header>
+
+            <!-- Formulário -->
+            <section class="login-form-section">
+                <form class="login-form" id="loginForm" novalidate>
+                    <!-- Campo Nome/Email -->
+                    <div class="login-form-group">
+                        <label for="emailInput" class="login-label">Nome</label>
+                        <input type="email" id="emailInput" class="login-input" placeholder="seu@email.com" required aria-label="Email para login">
+                    </div>
+
+                    <!-- Campo Senha -->
+                    <div class="login-form-group">
+                        <label for="passwordInput" class="login-label">Senha</label>
+                        <input type="password" id="passwordInput" class="login-input" placeholder="Digite sua senha" required aria-label="Senha para login">
+                    </div>
+
+                    <!-- Botão Login -->
+                    <button type="submit" class="login-button login-button--primary">
+                        Login
+                    </button>
+
+                    <!-- Link: Esqueci a senha -->
+                    <div style="margin-top:8px;text-align:right">
+                        <a href="esqueci-senha.html" class="login-link">Esqueceu a senha?</a>
+                    </div>
+                </form>
+            </section>
+
+            <!-- Divisor (opcional) -->
+            <div class="login-divider"></div>
+
+            <!-- Login com Google -->
+            <section class="login-social-section">
+                <button type="button" class="login-button login-button--google" id="googleLoginBtn">
+                    <img src="Assets/images/Icons/google-icon.png" alt="Logo Google" class="login-google-icon" loading="lazy">
+                    <span>Login com o Google</span>
+                </button>
+            </section>
+
+            <!-- Link para Registro -->
+            <footer class="login-footer">
+                <p class="login-footer-text">
+                    Não tem uma conta?
+                    <a href="registro.html" class="login-link">Registre-se</a>
+                </p>
+            </footer>
+        </main>
+    </div>
+    <script src="js/login.js" defer></script>
+    <script src="js/app.js" defer></script>
+</body>
+
+</html>

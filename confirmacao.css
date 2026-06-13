@@ -1,0 +1,49 @@
+:root{
+  --bg-app: #591c31;
+  --surface: #f7f3f6;
+  --accent: #7c334c;
+  --muted: #8b536a;
+  --white: #ffffff;
+  --radius: 28px;
+  --shadow: 0 18px 36px rgba(0,0,0,0.14);
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg,var(--bg-app) 0%, #7c334c 40%, #ffd9e7 100%);
+  color:var(--accent);
+  -webkit-font-smoothing:antialiased;
+}
+
+.app-container{
+  max-width:480px;
+  min-height:100vh;
+  margin:0 auto;
+  padding:20px 16px 24px;
+}
+
+.confirmacao-header{padding-bottom:18px}
+.confirmacao-nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.confirmacao-nav-link{width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;border-radius:14px;background:rgba(255,255,255,0.12);color:var(--white)}
+.confirmacao-title{margin:0;font-weight:700;font-size:1.1rem;color:var(--white);text-align:center;flex:1}
+
+.confirmacao-main{display:grid;gap:20px}
+
+.confirmacao-card{background:var(--surface);border-radius:42px;padding:26px 20px;box-shadow:var(--shadow);text-align:center}
+.confirmacao-icon{margin:6px auto 10px}
+.confirmacao-headline{margin:6px 0 6px;font-size:1.25rem;color:var(--accent)}
+.confirmacao-text{margin:0 0 16px;color:var(--muted)}
+
+.confirmacao-details{list-style:none;padding:0;margin:0 0 18px;display:grid;gap:12px}
+.confirmacao-detail{display:flex;justify-content:space-between;align-items:start;padding:12px;border-radius:16px;background:linear-gradient(180deg,#fff,#fbf8fb);box-shadow:0 8px 20px rgba(124,51,76,0.06)}
+.confirmacao-detail-label{font-weight:600;color:var(--muted);font-size:0.95rem}
+.confirmacao-detail-value{font-weight:700;color:var(--accent);text-align:right}
+
+.confirmacao-actions{margin-top:6px}
+.confirmacao-button{display:inline-flex;width:100%;min-height:52px;align-items:center;justify-content:center;background:var(--accent);color:var(--white);text-decoration:none;border-radius:20px;font-weight:700}
+
+@media(max-width:380px){.app-container{padding:18px 14px 20px}.confirmacao-card{padding:20px 16px}}
+
+@media(max-width:320px){.confirmacao-detail{padding:10px}}

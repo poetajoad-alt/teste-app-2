@@ -26,8 +26,18 @@ body{
 
 .confirmacao-header{padding-bottom:18px}
 .confirmacao-nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.confirmacao-nav-link{width:44px;height:44px;display:inline-flex;align-items:center;justify-content:center;border-radius:14px;background:rgba(255,255,255,0.12);color:var(--white)}
-.confirmacao-title{margin:0;font-weight:700;font-size:1.1rem;color:var(--white);text-align:center;flex:1}
+.confirmacao-nav-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  color:var(--white);
+  text-decoration:none;
+  background:none;
+  border:none;
+  padding:6px;
+  border-radius:0;
+}
+.confirmacao-title{margin:0;font-weight:700;font-size:1.1rem;color:#F0C1D1;text-align:center;flex:1}
 
 .confirmacao-main{display:grid;gap:20px}
 
